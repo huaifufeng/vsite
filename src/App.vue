@@ -1,14 +1,14 @@
 <template>
-  <attr-bind></attr-bind>
+  <event-handling></event-handling>
 </template>
 
 <script>
-import AttrBind from "@/components/AttrBind";
+import EventHandling from "@/components/EventHandling";
 
 export default {
   name: 'App',
   components: {
-    AttrBind,
+    EventHandling,
   }
 }
 </script>
