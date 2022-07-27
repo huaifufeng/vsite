@@ -1,5 +1,4 @@
 import { createApp } from 'vue'
-// import App from './App.vue'
-import CounterS from './CounterS.vue'
+import App from './App.vue'
 
-createApp(CounterS).mount('#app')
+createApp(App).mount('#app')
