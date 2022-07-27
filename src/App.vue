@@ -1,14 +1,14 @@
 <template>
-  <event-handling></event-handling>
+  <init-com></init-com>
 </template>
 
 <script>
-import EventHandling from "@/components/EventHandling";
+import InitCom from "@/components/InitCom";
 
 export default {
   name: 'App',
   components: {
-    EventHandling,
+    InitCom,
   }
 }
 </script>
