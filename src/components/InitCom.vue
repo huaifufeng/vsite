@@ -7,6 +7,7 @@
   <conditional-rendering></conditional-rendering>
   <list-rendering></list-rendering>
   <published-books></published-books>
+  <watch-example></watch-example>
 </template>
 
 <script>
@@ -17,10 +18,13 @@ import TwoWayBinding from "@/components/TwoWayBinding";
 import ConditionalRendering from "@/components/ConditionalRendering";
 import ListRendering from "@/components/ListRendering";
 import PublishedBooks from "@/components/PublishedBooks";
+import WatchExample from "@/components/WatchExample";
 
 export default {
   name: "InitCom",
-  components: {PublishedBooks, ListRendering, ConditionalRendering, TwoWayBinding, EventHandling, AttrBind, CounterS}
+  components: {
+    WatchExample,
+    PublishedBooks, ListRendering, ConditionalRendering, TwoWayBinding, EventHandling, AttrBind, CounterS}
 }
 </script>
 
