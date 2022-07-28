@@ -6,6 +6,7 @@
   <two-way-binding></two-way-binding>
   <conditional-rendering></conditional-rendering>
   <list-rendering></list-rendering>
+  <published-books></published-books>
 </template>
 
 <script>
@@ -15,10 +16,11 @@ import EventHandling from "@/components/EventHandling";
 import TwoWayBinding from "@/components/TwoWayBinding";
 import ConditionalRendering from "@/components/ConditionalRendering";
 import ListRendering from "@/components/ListRendering";
+import PublishedBooks from "@/components/PublishedBooks";
 
 export default {
   name: "InitCom",
-  components: {ListRendering, ConditionalRendering, TwoWayBinding, EventHandling, AttrBind, CounterS}
+  components: {PublishedBooks, ListRendering, ConditionalRendering, TwoWayBinding, EventHandling, AttrBind, CounterS}
 }
 </script>
 
