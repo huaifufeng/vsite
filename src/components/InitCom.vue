@@ -1,6 +1,6 @@
 <!--- 组件的入口组件 --->
 <template>
-  <ModelExample></ModelExample>
+  <ModelExample title="小王子呀"></ModelExample>
   <for-example></for-example>
   <if-example></if-example>
   <counter-s></counter-s>

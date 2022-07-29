@@ -1,7 +1,7 @@
 <template>
   <div>
-    <input v-model="message" placeholder="edit me"/>
-    <p>Message is {{message}}</p>
+    <input v-model="message" placeholder="edit me" />
+    <p>Message is {{title}} {{message}}</p>
 
     <span>Multiline message is:</span>
     <p style="white-space: pre-line">{{message}}</p>
@@ -25,6 +25,12 @@
 <script>
 export default {
   name: "ModelExample",
+  props: {
+    title: {
+      type: String,
+      default: ""
+    }
+  },
   data() {
     return {
       message: '王子',
