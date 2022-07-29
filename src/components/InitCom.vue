@@ -1,5 +1,6 @@
 <!--- 组件的入口组件 --->
 <template>
+  <if-example></if-example>
   <counter-s></counter-s>
   <attr-bind></attr-bind>
   <event-handling></event-handling>
@@ -21,10 +22,12 @@ import ListRendering from "@/components/ListRendering";
 import PublishedBooks from "@/components/PublishedBooks";
 import WatchExample from "@/components/WatchExample";
 import ClassExample from "@/components/ClassExample";
+import IfExample from "@/components/IfExample";
 
 export default {
   name: "InitCom",
   components: {
+    IfExample,
     ClassExample,
     WatchExample,
     PublishedBooks, ListRendering, ConditionalRendering, TwoWayBinding, EventHandling, AttrBind, CounterS}
