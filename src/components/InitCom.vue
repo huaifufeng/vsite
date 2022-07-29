@@ -1,5 +1,6 @@
 <!--- 组件的入口组件 --->
 <template>
+  <for-example></for-example>
   <if-example></if-example>
   <counter-s></counter-s>
   <attr-bind></attr-bind>
@@ -23,10 +24,12 @@ import PublishedBooks from "@/components/PublishedBooks";
 import WatchExample from "@/components/WatchExample";
 import ClassExample from "@/components/ClassExample";
 import IfExample from "@/components/IfExample";
+import ForExample from "@/components/ForExample";
 
 export default {
   name: "InitCom",
   components: {
+    ForExample,
     IfExample,
     ClassExample,
     WatchExample,
