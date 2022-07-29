@@ -5,17 +5,17 @@
         <!---可以访问父级的属性--->
         {{parentMessage}} {{ index }} {{item.message}}
       </li>
-      <li v-for="(item, name, index) in obj">
+      <li v-for="(item, name, index) in obj" :key="item.message">
         {{name}} {{item}} {{index}}
       </li>
       <!--- 计算属性不适用时，使用方法   嵌套for循环--->
-      <li v-for="n in evenNumbers">
+      <li v-for="n in evenNumbers" :key="n">
         {{n}}
       </li>
-      <li v-for="n in 10">
+      <li v-for="n in 10" :key="n">
         {{n}}
       </li>
-      <template v-for="item in list.items">
+      <template v-for="item in list.items"  :key="item.message">
         <li>{{item.message}}</li>
         <li class="divider" role="presentation"></li>
       </template>
