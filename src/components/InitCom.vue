@@ -1,5 +1,6 @@
 <!--- 组件的入口组件 --->
 <template>
+  <model-event></model-event>
   <ModelExample title="小王子呀"></ModelExample>
   <for-example></for-example>
   <if-example></if-example>
@@ -27,10 +28,12 @@ import ClassExample from "@/components/ClassExample";
 import IfExample from "@/components/IfExample";
 import ForExample from "@/components/ForExample";
 import ModelExample from "@/components/ModelExample";
+import ModelEvent from "@/components/ModelEvent";
 
 export default {
   name: "InitCom",
   components: {
+    ModelEvent,
     ModelExample,
     ForExample,
     IfExample,

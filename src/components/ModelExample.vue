@@ -25,6 +25,22 @@
 <script>
 export default {
   name: "ModelExample",
+  emits: {
+    click: null,
+    submit: ({email, password}) => {
+      if (email && password) {
+        return true;
+      } else {
+        console.warn('Invalid submit event payload!')
+        return false;
+      }
+    }
+  },
+  methods: {
+    submitForm(email, password) {
+      this.$emit('submit', {email, password})
+    }
+  },
   props: {
     title: {
       type: String,
