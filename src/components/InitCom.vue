@@ -1,5 +1,6 @@
 <!--- 组件的入口组件 --->
 <template>
+  <slot-example><i class="fa fa-plus">plus</i>测试中</slot-example>
   <model-event></model-event>
   <ModelExample title="小王子呀"></ModelExample>
   <for-example></for-example>
@@ -29,10 +30,12 @@ import IfExample from "@/components/IfExample";
 import ForExample from "@/components/ForExample";
 import ModelExample from "@/components/ModelExample";
 import ModelEvent from "@/components/ModelEvent";
+import SlotExample from "@/components/SlotExample";
 
 export default {
   name: "InitCom",
   components: {
+    SlotExample,
     ModelEvent,
     ModelExample,
     ForExample,
