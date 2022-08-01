@@ -1,25 +1,26 @@
 <template>
-  <init-com></init-com>
+  <left-list></left-list>
+  <right-content></right-content>
 </template>
 
 <script>
-import InitCom from "@/components/InitCom";
+import LeftList from "@/components/LeftList";
+import RightContent from "@/components/RightContent";
 
 export default {
   name: 'App',
   components: {
-    InitCom,
+    RightContent,
+    LeftList,
   }
 }
 </script>
 
 <style>
+body {
+  margin: 0;
+}
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  position: relative;
 }
 </style>
